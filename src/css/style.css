@@ -114,3 +114,10 @@ header {
 .top-nav li a:active {
     border-bottom: 2px solid #8CB7DC; 
 }
+
+/* --------------------------*/
+/* FEATURES*/
+/*---------------------------*/
+.feat-header {
+    text-align: center;
+}
