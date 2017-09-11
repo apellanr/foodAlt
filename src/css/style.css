@@ -59,7 +59,7 @@ h1 {
 
 .btn:hover,
 .btn:active {
-    background-color: rgb(140, 183, 220);
+    background-color: #8CB7DC;
 }
 
 /* --------------------------*/
@@ -78,4 +78,39 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* move element half of width & to the left */
+}
+
+/* 
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+*/
+
+.top-nav {
+    float: right;
+    list-style: none;
+    margin-top: 45px;
+}
+
+.top-nav li { 
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.top-nav li a:link,
+.top-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 0;
+    font-size: 90%; /* 18px / 20px of html */
+    border-bottom: 2px solid transparent; /* will not appear until hovered */
+    transition: border-bottom 0.2s;
+}
+
+.top-nav li a:hover,
+.top-nav li a:active {
+    border-bottom: 2px solid #8CB7DC; 
 }
