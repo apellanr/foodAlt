@@ -25,14 +25,15 @@ html {
 }
 
 section {
-    padding: 80px 0;
+    padding: 70px 0;
 }
 
 /* --------------------------*/
 /* HEADINGS */
 /*---------------------------*/
 h1,
-h2 {
+h2,
+h3 {
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -64,6 +65,11 @@ h2:after {
     width: 100px;
 }
 
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
 /* --------------------------*/
 /* PARAGRAPH ELEMENTS */
 /*---------------------------*/
@@ -71,9 +77,8 @@ h2:after {
     line-height: 145%;
     width: 70%; /* avoiding line paragraph length */
     margin-left: 15%; /* centering content, 30% distributed both sides */
-    
-}
 
+}
 
 /* --------------------------*/
 /* BUTTONS */
@@ -84,6 +89,7 @@ h2:after {
     padding: 10px 30px;
     font-weight: 300;
     text-decoration: none;
+    margin-right: 10px;
     border-radius: 200px;
     color: #fff;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
@@ -96,7 +102,18 @@ h2:after {
 
 .btn:hover,
 .btn:active {
-    background-color: #8CB7DC;
+    background-color: #4FB74C;
+}
+
+/* --------------------------*/
+/* ICONS */
+/*---------------------------*/
+.big-icon {
+    font-size: 345%;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #4FB74C;
 }
 
 /* --------------------------*/
@@ -149,14 +166,46 @@ header {
 
 .top-nav li a:hover,
 .top-nav li a:active {
-    border-bottom: 2px solid #8CB7DC; 
+    border-bottom: 2px solid #4FB74C; 
 }
 
 /* --------------------------*/
 /* FEATURES*/
 /*---------------------------*/
 
-
 .feat-header {
     text-align: center;
+}
+
+.feat-box {
+    padding: 1%;
+}
+
+.feat-box p {
+    font-size: 90%;
+    line-height: 140%;
+}
+
+/* --------------------------*/
+/* MEALS */
+/*---------------------------*/
+.recipe-list {
+    list-style: none;
+    width: 100%;
+}
+
+.recipe-list li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.recipe-photo {
+    width: 100%;
+    margin: 0;
+}
+
+.recipe-photo img {
+    width: 100%; /* assures element is the size of container*/
+    height: auto;
 }
